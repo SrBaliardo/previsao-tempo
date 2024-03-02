@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+    <title>Weather Forecast - JHAB-Dev</title>
+</head>
+
+<body>
+    <div class="box-major">
+        <input type="text" class="input-city" placeholder="Digite o nome da cidade">
+        <button class="btn-search" onclick="clickSearch()">
+            <img class="img-search" src="https://www.svgrepo.com/show/488200/find.svg" alt="search-icon">
+        </button>
+
+        <div class="weather-info">
+            <h2 class="weather-city">
+                <img class="img-loading" src="./images/dotted-line.png" alt="loading-icon">
+            </h2>
+
+            <p class="temperature"><img class="img-loading" src="./images/dotted-line.png" alt="loading-icon"></p>
+            
+            <p class="humidity"><img class="img-loading" src="./images/dotted-line.png" alt="loading-icon">
+            </p>
+
+            <div class="weather">
+                <img class="img-weather" src="./images/dotted-line.png" alt="loading-icon">
+                <p class="type-sky"><img class="img-loading" src="./images/dotted-line.png" alt="loading-icon"></p>
+            </div>
+            
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
