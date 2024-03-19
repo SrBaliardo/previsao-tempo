@@ -1,4 +1,5 @@
 const keyApi = 'd7a994a009e010705536fa68bdf4b031';
+const inputSearch = document.querySelector('.input-city');
 
 function showInfo(data) {
     console.log(data);
@@ -7,6 +8,7 @@ function showInfo(data) {
     document.querySelector('.sky').innerHTML = data.weather[0].description;
     document.querySelector('.humidity').innerHTML = 'Umidade: ' + data.main.humidity + '%';
     document.querySelector('.img-weather').src = `https://openweathermap.org/img/wn/${data.weather[0].icon}.png`;
+    inputSearch.value = '';
 
 }
 
