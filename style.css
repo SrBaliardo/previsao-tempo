@@ -1,93 +1,100 @@
 body {
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-image: url('https://source.unsplash.com/1600x900/?landscape');
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("./images/background-weather.jpg");
+  background-size: cover;
 }
 
 .main-box {
-    background-color: black;
-    opacity: 0.8;
-    border-radius: 25px;
-    padding: 21px;
-    width: 75%;
-    height: 95%;
-    max-width: 450px;
-    max-height: 330px;
+  background-color: black;
+  opacity: 0.8;
+  border-radius: 25px;
+  padding: 21px;
+  width: 75%;
+  height: 95%;
+  max-width: 450px;
+  max-height: 330px;
 }
 
 .input-city {
-    border: none;
-    outline: none;
-    padding: 10px;
-    border-radius: 25px;
-    font-size: 20px;
-    background-color: #7c7c7c2b;
-    color: white;
-    width: calc(100% - 75px);
+  border: none;
+  outline: none;
+  padding: 10px;
+  border-radius: 25px;
+  font-size: 20px;
+  background-color: #7c7c7c2b;
+  color: white;
+  width: calc(100% - 75px);
 }
 
 .btn-search {
-    border: none;
-    outline: none;
-    padding: 10px;
-    border-radius: 50px;
-    background-color: #7c7c7c2b;
-    cursor: pointer;
-    float: right;
+  border: none;
+  outline: none;
+  padding: 10px;
+  border-radius: 50px;
+  background-color: #7c7c7c2b;
+  cursor: pointer;
+  float: right;
 }
 
 .btn-search:hover {
-    background-color: rgb(201, 201, 201);
+  background-color: rgb(201, 201, 201);
 }
 
 .img-search {
-    width: 25px;
+  width: 25px;
 }
 
 .weather-info {
-    margin-top: 30px;
+  margin-top: 30px;
 }
 
 .img-loading {
-    display: flex;
-    align-items: center;
-    width: 32.7px;
+  display: flex;
+  align-items: center;
+  width: 32.7px;
 }
 
 .img-weather {
-    display: flex;
-    align-items: center;
-    width: 70px;
+  display: flex;
+  align-items: center;
+  width: 70px;
 }
 
 .weather-city {
-    color: white;
-    font-size: 27;
-    font-weight: 300;
+  color: white;
+  font-size: 27;
+  font-weight: 300;
 }
 
-.temperature {
-    font-size: 20px;
-    color: white;
-    margin-top: 20px;
+.temperature-container {
+  display: flex;
+  gap: 20px;
+}
+
+.temperature,
+.temperature-feelslike {
+  font-size: 20px;
+  color: white;
+  margin-top: 20px;
 }
 
 .weather {
-    display: flex;
-    align-items: center;
-    margin-top: 20px;
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
 }
 
 .sky {
-    color: white;
-    margin-left: 20px;
-    text-transform: capitalize;
+  color: white;
+  margin-left: 20px;
+  text-transform: capitalize;
 }
 
 .humidity {
-    color: white;
-    margin-top: 20px;
+  color: white;
+  margin-top: 20px;
 }
